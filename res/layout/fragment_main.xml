@@ -7,18 +7,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.blazesurf.MainActivity$PlaceholderFragment" 
-    android:orientation="horizontal" >
+    android:orientation="horizontal"
+    android:baselineAligned="false" >
     
-    <EditText android:id="@+id/edit_message"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:hint="@string/edit_message" />
+    <fragment android:name="com.example.blazesurf.MainActivity$PlaceholderFragment"
+              android:id="@+id/main_activity_fragment"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessage" />
+    <fragment android:name="com.example.blazesurf.DisplayMessageActivity$PlaceholderFragment"
+              android:id="@+id/display_activity_fragment"
+              android:layout_weight="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent" />
     
 </LinearLayout>

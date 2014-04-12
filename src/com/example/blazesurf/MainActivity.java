@@ -24,6 +24,19 @@ public class MainActivity extends Activity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 		
+
+//	    <EditText android:id="@+id/edit_message"
+//	        android:layout_height="wrap_content"
+//	        android:layout_weight="1"
+//	        android:layout_width="0dp"
+//	        android:hint="@string/edit_message" />
+//
+//	    <Button
+//	        android:layout_width="wrap_content"
+//	        android:layout_height="wrap_content"
+//	        android:text="@string/button_send"
+//	        android:onClick="sendMessage" />
+		
 	}
 
 	@Override
